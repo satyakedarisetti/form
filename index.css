@@ -1,0 +1,136 @@
+ /* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Container */
+.container {
+    background-image: url('night.jpg.jpg'); /* Ensure the image path is correct */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Form Content */
+.content {
+    border: 2px solid black;
+    width: 350px; /* Slightly wider form for better spacing */
+    color: white;
+    text-transform: capitalize;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* Heading */
+.content h2 {
+    color: cyan;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    display: block;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Input Fields */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Focus Effect */
+input:focus, textarea:focus {
+    border-bottom: 2px solid cyan;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Placeholder */
+::placeholder {
+    color: gray;
+    text-transform: capitalize;
+}
+
+/* Error Input Styling */
+input.error, textarea.error {
+    border: 2px solid red !important;
+    background: rgba(255, 0, 0, 0.1);
+    color: white;
+}
+
+/* Error Placeholder */
+input.error::placeholder, textarea.error::placeholder {
+    color: red;
+    font-weight: bold;
+}
+
+/* Error Message */
+span.error-msg {
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Submit Error */
+#subiterror {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background: cyan;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: darkcyan;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .content {
+        width: 90%;
+        padding: 15px;
+    }
+    button {
+        padding: 10px;
+    }
+}

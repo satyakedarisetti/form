@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+ </head>
+ <body>
+    <div class="container">
+        <div class="content">
+            <div class="head">
+                <h2>login here</h2>
+            </div>
+            <form action="">
+                <div class="input">
+                    <label for="">enter name</label>
+                    <input type="text" placeholder="enter name" name="name"  id="contactname" onkeyup="validatename()">
+                    <span id="Nameerror"> </span>
+                </div>
+                <div class="input">
+                    <label for="">number</label>
+                    <input type="number" name="number"  placeholder="enter number" id="contactnum" onkeyup="validatenum()">
+                    <span id="numerror"> </span>
+                </div>
+                <div class="input">
+                    <label for="">email</label>
+                    <input type="email" placeholder="enter e mail" name="email" id="contactemail" onkeyup="validemail()">
+                    <span id="Emailerror">  </span>
+                </div>
+                 
+                <div class="input">
+                    <label for="address">address</label>
+                    <textarea name="address" rows="5" placeholder="enter your address" id="contactmsg" onkeyup="validmsg()"></textarea>
+                    <span id="Msgerror"> </span>
+                </div>
+                <button onclick="return validateform()">submit</button>
+                <span id="subiterror"> </span>
+            </form>
+
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+ </body>
+ </html>
