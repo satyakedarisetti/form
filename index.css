@@ -124,13 +124,4 @@ button:hover {
     color: white;
 }
 
-/* Responsive Design */
-@media (max-width: 400px) {
-    .content {
-        width: 90%;
-        padding: 15px;
-    }
-    button {
-        padding: 10px;
-    }
-}
+
